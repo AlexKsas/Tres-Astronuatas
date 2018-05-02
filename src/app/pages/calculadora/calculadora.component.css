@@ -1,0 +1,239 @@
+.margen{
+    background-color: gray;
+    border: solid darkgray;
+    border-radius: 5px;
+    position: relative;
+    padding: 1px;
+    margin: auto;
+    width: 380px;
+    height: 600px;
+}
+.calculadora{
+    background-color: black;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 5px;
+    height: 560px;
+    margin: auto;
+    margin-top: 1rem;
+    width: 350px;
+}
+div ul li{
+    color: white;
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+}
+.encabezado-superior ul{
+    font-size: 17px;
+    padding: initial;
+}
+#li-encabezado-2{
+    position: relative;
+    top: 4px;
+}
+#li-encabezado-1 {
+    color: white;
+    position: relative;
+    left: -68px;
+    top: 4px;
+}
+#li-encabezado-3{
+    position: relative;
+    right: -68px;
+    top: 4px;
+}
+.encabezado-inferior ul{
+    padding: initial;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 25px;
+}
+ul li#oction-1{
+    position: relative;
+    right: 120px;
+}
+ul li#oction-2{
+    position: relative;
+    left: 120px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#operacion{
+    font-size: 1.3rem;
+    position: relative;
+    height: 50px;
+    left: 40px;
+    margin-top: 20px;
+    text-align: right;
+    width: 70%;
+    background-color: black;
+    border: 0;
+    color: lightslategray;
+}
+#text-area {
+    color:white; 
+    display: inline;
+    position: relative;
+    right: 30px;
+    top: 3px;
+    font-size: 1.3rem;
+}
+#num-area{
+    position: relative;
+    left: 30px;
+    text-align: right;
+    font-size: 1.8rem;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border:0;
+}
+div.teclado ul {
+    padding: 0;
+    background-color: blue;
+    margin-top: 10px;
+}
+div.teclado ul{
+    /* margin: 1px;
+    padding: 1px; */
+}
+.btn{
+    background-color: black;
+    color:white;
+}
+.btn-1{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 170px;
+}
+.btn-2{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-3{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-4{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-5{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-6{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-7{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-8{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-9{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-10{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-11{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-12{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-13{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-14{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-15{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-16{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-17{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-18{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-19{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-20{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 170px;
+}
+.btn-21{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+.btn-22{
+    position: relative;
+    margin:1.2px 0;
+    height:60px;
+    width: 83px;
+}
+
+
