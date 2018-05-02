@@ -4,29 +4,29 @@
         fill: black;
         stroke: black;
         stroke-dasharray: 550;
-        -webkit-animation:  Logo 3s;
-        -moz-animation: Logo 3s;
-        -o-animation: Logo 3s;
-        animation: Logo 3s;
+        -webkit-animation:  Logo 3s infinite;
+        -moz-animation: Logo 3s infinite;
+        -o-animation: Logo 3s infinite;
+        animation: Logo 3s infinite;
 
     }
     @-webkit-keyframes Logo{
-        0%{fill:blue; stroke-dashoffset:550;}
+        0%{fill:white; stroke-dashoffset:550;}
         50%{opacity: .4;}
         100%{fill:pourple; troke-dashoffset:0;}
     }
     @-moz-keyframes Logo{
-        0%{fill:blue; stroke-dashoffset:550;}
+        0%{fill:white; stroke-dashoffset:550;}
         50%{opacity: .4;}
         100%{fill:pourple; troke-dashoffset:0;}
     }
     @-o-keyframes Logo{
-        0%{fill:blue; stroke-dashoffset:550;}
+        0%{fill:white; stroke-dashoffset:550;}
         50%{opacity: .4;}
         100%{fill:pourple; troke-dashoffset:0;}
     }
     @keyframes Logo{
-        0%{fill:blue; stroke-dashoffset:550;}
+        0%{fill:white; stroke-dashoffset:550;}
         50%{opacity: .4;}
         100%{fill:pourple; troke-dashoffset:0;}
     }

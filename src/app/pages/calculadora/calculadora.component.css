@@ -1,5 +1,5 @@
 .margen{
-    background-color: gray;
+    background-color:rgb(159, 159, 159);
     border: solid darkgray;
     border-radius: 5px;
     position: relative;
@@ -51,10 +51,12 @@ div ul li{
 ul li#oction-1{
     position: relative;
     right: 120px;
+    color: rgb(144,144,144);
 }
 ul li#oction-2{
     position: relative;
     left: 120px;
+    color: rgb(144,144,144);
 }
 *{
     padding: 0;
@@ -71,6 +73,7 @@ ul li#oction-2{
     background-color: black;
     border: 0;
     color: lightslategray;
+    resize: none; 
 }
 #text-area {
     color:white; 
@@ -92,148 +95,194 @@ ul li#oction-2{
 }
 div.teclado ul {
     padding: 0;
-    background-color: blue;
+    background-color: black;
     margin-top: 10px;
-}
-div.teclado ul{
-    /* margin: 1px;
-    padding: 1px; */
 }
 .btn{
     background-color: black;
-    color:white;
+    color: rgb(152,152,152);
+    font-size: 20px;
+}
+.btn:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
 }
 .btn-1{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 170px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-2{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-3{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-4{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-5{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-6{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-7{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-8{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-9{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-10{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-11{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-12{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-13{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-14{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-15{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-16{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-17{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-18{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-19{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(25,25,25);
+    border: 0;
 }
 .btn-20{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 170px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-21{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(45,45,45);
+    border: 0;
 }
 .btn-22{
     position: relative;
     margin:1.2px 0;
     height:60px;
     width: 83px;
+    background-color: rgb(198,61,0);
+    border: 0;
 }
 
 
