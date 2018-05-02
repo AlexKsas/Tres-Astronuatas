@@ -1,5 +1,5 @@
 # Tres-Astronuatas
-# Developer Inc - Web Page
+# Jonathan Casas
 
 Repositorio oficial del sitio web de Developer Inc, hecho en [Angular 5]("https://angular.io/").
 
@@ -18,6 +18,7 @@ Este proyecto fue creado en base a [create-angular-app]("https://angular.io/guid
 ### Lista de cambios
 
 Versión | 	  Fecha		 |   Autor		  | Detalles
+
 --- ----| -------------- | -------------- | --------------------
 1.0     | Marzo del 2018 | Jonathan Casas | Creación del proyecto
 1.1     | Marzo del 2018 | Jonathan Casas | Desarrollo Front-End
