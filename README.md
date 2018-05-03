@@ -17,11 +17,12 @@ Este proyecto fue creado en base a [create-angular-app]("https://angular.io/guid
 
 ### Lista de cambios
 
-Versión | 	  Fecha		 |   Autor		  | Detalles
+Versión | 	  Fecha		  |     Autor	     | Detalles
 
---- ----| -------------- | -------------- | --------------------
-1.0     | Marzo del 2018 | Jonathan Casas | Creación del proyecto
-1.1     | Marzo del 2018 | Jonathan Casas | Desarrollo Front-End
+------- | ------------- | -------------- | --------------------
+1.0     | mayo del 2018 | Jonathan Casas | Creación del proyecto
+1.1     | Mayo del 2018 | Jonathan Casas | Desarrollo Front-End
+1.2     | Mayo del 2018 | Jonathan Casas | Correcion de Funcionabilidad
 
 > Nota: Refierase a esta tabla cuando únicamente cuando se realice un cambio significativo del proyecto.
 

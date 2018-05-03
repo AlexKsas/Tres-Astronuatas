@@ -5,6 +5,10 @@
     height: 20px;
     width: 90px;
 }
+.btn-1:hover{
+    opacity: .9;
+    color: white;
+}
 .perfil{
     width: 230px;
     margin: auto;   

@@ -76,6 +76,7 @@ ul li#oction-2{
     resize: none; 
 }
 #text-area {
+    resize: none;
     color:white; 
     display: inline;
     position: relative;
@@ -284,5 +285,15 @@ div.teclado ul {
     background-color: rgb(198,61,0);
     border: 0;
 }
-
-
+.btn-index{
+    color: white;
+    background-color: rgb(25,25,25);
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: auto;   
+    position: relative;
+    margin-top: 3px;
+    height:30px;
+    width: 170px;
+}
