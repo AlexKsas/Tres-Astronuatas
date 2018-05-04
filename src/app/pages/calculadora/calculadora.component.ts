@@ -3,6 +3,7 @@ import { $ } from 'protractor';
 import { SlicePipe } from '@angular/common';
 import { CATCH_ERROR_VAR } from '@angular/compiler/src/output/abstract_emitter';
 import { DOCUMENT } from '@angular/platform-browser';
+import { isNumber } from 'util';
 
 @Component({
   selector: 'app-calculadora',
@@ -30,8 +31,8 @@ export class CalculadoraComponent implements OnInit {
     console.log(e);
       try{
       var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
-      var operacion = eval(operacion);
-      if(isNaN(operacion)){
+      var operacion:string = eval(operacion);
+      if(Number(operacion)){
           (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
         }else{
           (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
@@ -41,15 +42,6 @@ export class CalculadoraComponent implements OnInit {
         console.log(error);
       }
     });
-    }
-  check(e) {
-    var tecla = (document.all) ? e.keycode: e.which;
-    if (tecla = 8){
-      return true;
-    }
-    var patron = /a/;
-    var teclaFinal = String.fromCharCode(tecla);
-    return patron.test(teclaFinal);
   }
   btn1(){
     (<HTMLInputElement>document.getElementById("operacion")).value="";
@@ -58,21 +50,19 @@ export class CalculadoraComponent implements OnInit {
   btn2(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var log = operacion.length;
-    var lon = log -1
+    var lon = log -1;
     var operacion = operacion.substr(0,lon);
     (<HTMLInputElement>document.getElementById("operacion")).value = operacion;
     var operacion = "";
   }
   btn3(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value = "1/"+operacion;
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value =operacion;
   }
   btn4(){
-    // var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
-    // console.log(operacion);
     var operacion = (<HTMLInputElement>document.getElementById("num-area")).value;
     var val = operacion.split("-")[0];
     if(val == ""){
@@ -87,70 +77,76 @@ export class CalculadoraComponent implements OnInit {
   }
   btn5(){
     var operacion = (<HTMLInputElement>document.getElementById("num-area")).value;
-    var operacion = Math.sqrt(operacion);
-    if(isNaN(operacion)){
-      (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
-    }else{
+    console.log(operacion);
+    var operacion:string = eval(operacion);
+    var opera = Number(operacion);
+    var opera = Math.sqrt(opera);
+    console.log(opera);
+    if(Number(opera)){
+      console.log("es numero ");
+      var operacion = String(opera);
+      (<HTMLInputElement>document.getElementById("operacion")).value = operacion;
       (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
+    }else{
+      console.log("no es numero");
+      (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
     }
     // var operacion = eval(operacion);
   }
   btn6(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value="("+operacion+")/100";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
-    console.log(operacion);
-    if(isNaN(operacion)){
-      (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
+    if(Number(operacion)){
+      // (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
     }else{
     }
   }
   btn7(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"/";
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn8(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=(operacion)+"7";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn9(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=(operacion)+"8";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn10(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"9";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn11(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value="("+operacion+")*";
-    function resultado(operacion);
   }
   btn12(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"4";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn13(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"5";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn14(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"6";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn15(){
@@ -160,19 +156,19 @@ export class CalculadoraComponent implements OnInit {
   btn16(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"1";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn17(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"2";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn18(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"3";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn19(){
@@ -183,7 +179,7 @@ export class CalculadoraComponent implements OnInit {
   btn20(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"0";
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn21(){
@@ -194,13 +190,11 @@ export class CalculadoraComponent implements OnInit {
   btn22(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     console.log(operacion);
-    var operacion = eval(operacion);
+    var operacion:string = eval(operacion);
     console.log(operacion);
     if(Number(operacion)){
-      console.log("logrado");
      (<HTMLInputElement>document.getElementById("operacion")).value = operacion; 
     }else{
-      console.log("no logrado");
       (<HTMLInputElement>document.getElementById("num-area")).value = "undefined"; 
     }
   }
