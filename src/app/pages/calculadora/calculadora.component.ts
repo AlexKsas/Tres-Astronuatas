@@ -91,7 +91,6 @@ export class CalculadoraComponent implements OnInit {
       console.log("no es numero");
       (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
     }
-    // var operacion = eval(operacion);
   }
   btn6(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
@@ -99,13 +98,13 @@ export class CalculadoraComponent implements OnInit {
     var operacion:string = eval(operacion);
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
     if(Number(operacion)){
-      // (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
+      (<HTMLInputElement>document.getElementById("num-area")).value = "undefined";
     }else{
+
     }
   }
   btn7(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
-    var operacion:string = eval(operacion);
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value="("+operacion+")/";
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
