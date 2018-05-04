@@ -106,7 +106,7 @@ export class CalculadoraComponent implements OnInit {
   btn7(){
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     var operacion:string = eval(operacion);
-    var operacion = (<HTMLInputElement>document.getElementById("operacion")).value=operacion+"/";
+    var operacion = (<HTMLInputElement>document.getElementById("operacion")).value="("+operacion+")/";
     (<HTMLInputElement>document.getElementById("num-area")).value = operacion;
   }
   btn8(){
@@ -191,8 +191,9 @@ export class CalculadoraComponent implements OnInit {
     var operacion = (<HTMLInputElement>document.getElementById("operacion")).value;
     console.log(operacion);
     var operacion:string = eval(operacion);
-    console.log(operacion);
-    if(Number(operacion)){
+    var oper = Number(operacion);
+    console.log(oper);
+    if(isNaN(oper)){
      (<HTMLInputElement>document.getElementById("operacion")).value = operacion; 
     }else{
       (<HTMLInputElement>document.getElementById("num-area")).value = "undefined"; 
